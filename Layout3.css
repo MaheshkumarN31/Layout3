@@ -1,0 +1,297 @@
+.head {
+  background-color: rgb(65, 17, 17);
+  display: flex;
+}
+.head p {
+  display: flex;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifS;
+  height: 60px;
+  margin-left: 20px;
+}
+.head i {
+  color: #dfaa36;
+  margin-left: 10px;
+}
+.head #follow {
+  margin-left: 1070px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.image {
+  background-image: url(carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px;
+  margin-top: -42px;
+}
+
+.carousel {
+  display: flex;
+}
+.carousel h2 {
+  color: #dfaa36;
+  margin-left: 40px;
+  font-size: 50px;
+}
+.carousel ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  margin-left: 300px;
+  margin-top: 70px;
+}
+.carousel ul li {
+  margin-right: 15px;
+}
+.carousel ul li a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.carousel p {
+  color: #dfaa36;
+  margin-top: 50px;
+  padding-left: 8px;
+  font-weight: bolder;
+}
+.carousel p i {
+  margin-left: 350px;
+  font-size: 30px;
+}
+.carousel p span {
+  font-size: 20px;
+}
+
+.content {
+  color: #dfaa36;
+  margin-top: 150px;
+  margin-left: 80px;
+  font-weight: bold;
+}
+.content p {
+  font-size: 20px;
+}
+.content h2 {
+  color: white;
+  font-size: 70px;
+  margin-top: -10px;
+}
+.content span {
+  border-radius: 20px;
+  background-color: #dfaa36;
+  color: white;
+  width: 30px;
+  height: 20px;
+  padding: 12px 30px;
+  margin-top: -10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.grid-container .grid1 #para {
+  color: #dfaa36;
+  font-weight: bold;
+}
+.grid-container .grid1 h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+.grid-container .grid-container1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid-container .grid-container1 .grid11 {
+  height: 30px;
+}
+.grid-container .grid-container1 .grid11 i {
+  background-color: #dfaa36;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+}
+.grid-container .grid-container1 .grid11 span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.grid-container .grid-container1 .grid12 i {
+  background-color: #dfaa36;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+}
+.grid-container .grid-container1 .grid12 span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.grid-container .grid-container1 .grid13, .grid-container .grid-container1 .grid14 {
+  margin-top: 10px;
+}
+.grid-container .grid-container1 .grid13 i, .grid-container .grid-container1 .grid14 i {
+  background-color: #dfaa36;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+}
+.grid-container .grid-container1 .grid13 span, .grid-container .grid-container1 .grid14 span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.grid-container .grid2 {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-top: 160px;
+  margin-left: 350px;
+  background-color: #dfaa36;
+  grid-template-columns: 50% 50%;
+}
+.grid-container .grid2 .grid21 img {
+  width: 280px;
+  height: 360px;
+  margin-left: -250px;
+  border-radius: 10px;
+  margin-top: -180px;
+}
+.grid-container .grid2 .grid22 img {
+  width: 280px;
+  height: 360px;
+  border-radius: 10px;
+  margin-left: 140px;
+  margin-top: -140px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .head #follow {
+    margin-left: -1px;
+    padding-left: 540px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .image {
+    background-size: cover;
+  }
+  .carousel h2 {
+    margin-right: 50px;
+  }
+  .carousel ul {
+    margin-left: -10px;
+    margin-right: 150px;
+  }
+  .carousel ul li a i {
+    margin-top: -20px;
+  }
+  .carousel p {
+    margin-left: -10px;
+  }
+  .carousel p i {
+    margin-left: -10px;
+  }
+  .grid-container {
+    display: inline;
+  }
+  .grid-container .grid1 {
+    display: inline;
+  }
+  .grid-container .grid2 {
+    display: inline;
+    background-color: #dfaa36;
+    width: 300px;
+    height: 300px;
+  }
+  .grid-container .grid2 .grid21 img {
+    float: left;
+    padding-top: 300px;
+    margin-left: 150px;
+  }
+  .grid-container .grid2 .grid22 img {
+    float: left;
+    margin-right: 80px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 478px) {
+  /* Hamburger menu icon */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    order: 1; /* Position below the heading */
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 25px;
+    color: white;
+  }
+  .head {
+    display: none;
+  }
+  .image {
+    background-image: url(carousel-4.jpg);
+    background-size: cover;
+  }
+  .carousel ul, .carousel p {
+    display: none;
+  }
+  .content p {
+    font-size: 15px;
+    margin-left: -50px;
+    font-weight: bolder;
+    margin-top: -60px;
+  }
+  .content h2 {
+    font-size: 45px;
+    margin-left: -50px;
+  }
+  .content span {
+    margin-left: -30px;
+    padding: -2px;
+  }
+  .grid-container {
+    display: inline;
+  }
+  .grid-container .grid1 {
+    display: inline;
+  }
+  .grid-container .grid1 #para, .grid-container .grid1 h2 {
+    margin: 0 30px;
+  }
+  .grid-container .grid1 .para1 {
+    margin: 10px 30px;
+  }
+  .grid-container .grid1 .grid-container1 {
+    display: inline;
+  }
+  .grid-container .grid1 .grid-container1 .grid11, .grid-container .grid1 .grid-container1 .grid12, .grid-container .grid1 .grid-container1 .grid13, .grid-container .grid1 .grid-container1 .grid14 {
+    display: inline;
+  }
+  .grid-container .grid1 .grid-container1 .grid11 i, .grid-container .grid1 .grid-container1 .grid11 p, .grid-container .grid1 .grid-container1 .grid12 i, .grid-container .grid1 .grid-container1 .grid12 p, .grid-container .grid1 .grid-container1 .grid13 i, .grid-container .grid1 .grid-container1 .grid13 p, .grid-container .grid1 .grid-container1 .grid14 i, .grid-container .grid1 .grid-container1 .grid14 p {
+    margin: 10px 40px;
+  }
+  .grid-container .grid2 {
+    display: inline;
+    background-color: #dfaa36;
+    width: 300px;
+    height: 300px;
+  }
+  .grid-container .grid2 .grid21 img {
+    float: left;
+    padding-top: 200px;
+    margin-left: 40px;
+  }
+  .grid-container .grid2 .grid22 img {
+    margin-top: 60px;
+    margin-left: -2px;
+  }
+}/*# sourceMappingURL=Layout3.css.map */
